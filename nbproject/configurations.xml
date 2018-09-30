@@ -12,7 +12,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.cpp</itemPath>
+      <itemPath>01_window.cpp</itemPath>
+      <itemPath>02_dot.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -39,7 +40,9 @@
           <commandLine>-lGL -lglut</commandLine>
         </linkerTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="01_window.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="02_dot.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -62,7 +65,9 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="01_window.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="02_dot.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
