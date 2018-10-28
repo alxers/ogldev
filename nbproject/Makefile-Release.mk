@@ -36,7 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/01_window.o \
-	${OBJECTDIR}/02_dot.o
+	${OBJECTDIR}/02_dot.o \
+	${OBJECTDIR}/03_triangle.o
 
 
 # C Compiler Flags
@@ -72,6 +73,11 @@ ${OBJECTDIR}/02_dot.o: 02_dot.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/02_dot.o 02_dot.cpp
+
+${OBJECTDIR}/03_triangle.o: 03_triangle.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/03_triangle.o 03_triangle.cpp
 
 # Subprojects
 .build-subprojects:
